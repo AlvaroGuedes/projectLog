@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body, html {                                                 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * 
+{
+    box-sizing: border-box;
+}
+ul
+{
+    list-style-type: none;
+}
+ul li 
+{
+    list-style-type: none;
+}
+.main-login {
+    width : 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+ img
+{
+    width: 40px;
+}
+nav
+{
+   background-color:  #191523;
+   width: 350px;
+   height: 100%;
+   left: -350px;
+   position: absolute;
+   padding: 0;
+   margin:0;
+   transition: 0.5s;
+
+   
+}
+.sidebar input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+.sidebar label
+{
+
+padding: 15px;
+position:absolute;
+z-index: 1;
+}
+ul {
+    
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    padding: 0;
+    margin:0;
+    
+}
+ul li:hover {
+    background: #282139;
+
+}
+ul li {
+    /* Ajustar o espaçamento interno e externo dos li conforme desejado */
+    margin: 5px;
+    width: 95%;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #2f2841;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #08090852;  
+    text-align: center;
+}
+nav a {
+    display: block;
+    padding: 20px 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.left-login {
+    width: 50vw;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #77ffc0;
+}
+
+.image-login-left {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.btnCadastrar {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;  
+}
+
+.btnCadastrar:hover,
+.btn-login:hover {
+    background-color: #06c76d;
+    transition: 1s;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;  
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;  
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+    .image-login-left {
+        width: 50vw;
+    }
+    .card-login {
+        width: 90%;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela De Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagina.html">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-login">
+        <div class="sidebar">
+    
+           <input type="checkbox" id="check">
+           <label for="check">
+            <img src="cavalo.png" alt="">
+           </label>
+           <nav>
+           <ul>
+              <li><a href="#">HOME
+              </a></li>
+              <li><a href="#">HELP</a></li>
+              <li><a href="#">COMO PODEMOS AJUDAR</a></li>
+           </ul>
+        </nav>
+        </div>
+        <div class="left-login">
+           <h1>Faça Login <br>E entre em nosso site</h1>
+           <img src="Old day-rafiki.svg" class="image-login-left" alt="">
+        </div>
+        <div class="right-login">
+           <div class="card-login">
+              <h1> LOGIN</h1>
+              <div class="textfield">
+                 <label for="user"> User</label>
+                 <input type="text" name="user" placeholder="User">
+              </div>
+              <div class="textfield">
+                 <label for="password"> Password</label>
+                 <input type="password" name="password" placeholder="Password">
+              </div>
+              <button class="btn-login">Login</button>
+              <button class="btnCadastrar" type="submit">Cadastre-se</button>
+           </div>
+        </div>
+     </div>
+
+        <script>
+            $(document).ready(function() {
+                $(".btn-login").click(function()
+                {
+                    var username = $("input[name='user']").val();
+                   var password = $("input[name='password']").val();
+                    
+
+                    if (username == "Zeus" && password == "ErikaEzeus1991")
+                    {
+                    window.location.href = "file:///C:/Users/ALVARO/Desktop/html/login/pagina.html";
+                    }
+                    else
+                    {
+                        alert("usuario e senha incorretos")
+                    }
+                });
+                $(".btnCadastrar").click(function()
+                {
+                  window.location.href="file:///C:/Users/ALVARO/Desktop/html/login/pagina.html";
+                });
+               
+            });
+
+    
+        </script>
+    
+</body>
+</html>
